@@ -1,0 +1,6 @@
+You've got a TOCTOU vulnerability when a priviledged program checks a files
+permission and a malicious actor swaps the file in between the check and the
+actual use of the intended file. This is a textbook race condition and a real
+world exploit vector especially when messing with setuid-root binaries or shared
+temp directories like /tmp. I hope this helps you to understand how fast these
+things happen and what exactly happened in this attack. Sophos 0-100!
